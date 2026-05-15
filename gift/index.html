@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Vellum · Sana bir kapsul gonderildi</title>
+<meta name="theme-color" content="#0E0B14"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Vellum"/>
+<meta property="og:title" content="Sana bir kapsul gonderildi"/>
+<meta property="og:description" content="Yillar sonra acilacak bir ses kapsulu seni bekliyor. Almak icin Vellum'u yukle."/>
+<meta property="og:image" content="https://vellumapp.net/og-gift.png"/>
+<meta property="og:url" content="https://vellumapp.net/gift"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Sana bir kapsul gonderildi"/>
+<meta name="twitter:description" content="Yillar sonra acilacak bir ses kapsulu seni bekliyor."/>
+<meta name="twitter:image" content="https://vellumapp.net/og-gift.png"/>
+
+<!-- Smart App Banner -->
+<meta name="apple-itunes-app" content="app-id=APPID, app-argument=vellum://gift"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html, body { margin: 0; padding: 0; }
+  :root {
+    --bg: #0E0B14;
+    --ink: #fafaf7;
+    --ink-2: rgba(250,250,247,0.62);
+    --ink-3: rgba(250,250,247,0.38);
+    --amber: #d4a574;
+    --ember: #c75d4b;
+    --serif: 'Instrument Serif', Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .ambient {
+    position: fixed;
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212,165,116,0.22), rgba(199,93,75,0.08) 50%, transparent 75%);
+    filter: blur(42px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .grain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    background-image: radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px);
+    background-size: 3px 3px;
+    z-index: 1;
+  }
+
+  .stage {
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 36px 24px 40px;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lockup {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    align-self: center;
+    text-decoration: none;
+  }
+  .lockup svg { display: block; }
+  .lockup-word {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .seal-wrap {
+    margin: 56px auto 0;
+    width: 168px;
+    height: 168px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: breathe 4s ease-in-out infinite;
+  }
+  .seal-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -28px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212,165,116,0.32), transparent 65%);
+    filter: blur(20px);
+    z-index: -1;
+  }
+  .seal {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, rgba(255,220,180,0.96), rgba(180,120,75,0.78) 50%, rgba(120,60,40,0.5) 100%);
+    box-shadow:
+      0 30px 60px -10px rgba(199,93,75,0.55),
+      inset 0 -8px 20px rgba(80,30,15,0.5),
+      inset 0 8px 20px rgba(255,220,180,0.3);
+  }
+  .ribbon {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    padding: 4px 12px;
+    background: linear-gradient(180deg, #d8a86a 0%, #b88345 100%);
+    border-radius: 4px;
+    font-size: 9px;
+    color: #3a1a08;
+    letter-spacing: 1.8px;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(199,93,75,0.4);
+    z-index: 2;
+  }
+  .seal-emblem {
+    position: relative;
+    z-index: 2;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255,230,200,0.55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .seal-v {
+    font-family: var(--serif);
+    font-size: 32px;
+    color: #3a1a08;
+    font-style: italic;
+    line-height: 1;
+  }
+  .seal-label {
+    font-size: 9px;
+    color: rgba(58,26,8,0.7);
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.025); }
+  }
+
+  .eyebrow {
+    text-align: center;
+    margin-top: 36px;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--amber);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h1.hero {
+    margin: 14px 0 0;
+    text-align: center;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(30px, 9vw, 40px);
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  h1.hero .accent { color: var(--amber); }
+  .lede {
+    text-align: center;
+    margin: 18px auto 0;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    max-width: 320px;
+    text-wrap: pretty;
+  }
+
+  .cta {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 56px;
+    padding: 0 24px;
+    background: var(--amber);
+    color: #1a1208;
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 12px 28px -10px rgba(212,165,116,0.5);
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+  }
+  .btn-primary:hover, .btn-primary:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 18px 36px -10px rgba(212,165,116,0.6);
+  }
+  .btn-primary:active { transform: scale(0.98); }
+  .btn-primary svg { display: block; }
+
+  .reminder {
+    margin-top: 22px;
+    padding: 14px 16px;
+    background: rgba(212,165,116,0.06);
+    border: 0.5px solid rgba(212,165,116,0.22);
+    border-radius: 14px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .reminder-glyph {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(212,165,116,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--amber);
+  }
+  .reminder-body {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+  .reminder-body strong { color: var(--ink); font-weight: 600; }
+
+  .trust {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .trust-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.45;
+  }
+  .trust-row svg { flex-shrink: 0; color: var(--amber); }
+
+  .footer {
+    margin-top: auto;
+    padding-top: 36px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--ink-3);
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+  }
+  .footer .word {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--amber);
+    font-size: 14px;
+  }
+  .footer a {
+    color: var(--ink-3);
+    text-decoration: none;
+  }
+  .footer a:hover { color: var(--ink-2); }
+
+  /* Language switcher */
+  .lang-switch {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    display: flex;
+    gap: 4px;
+  }
+  .lang-btn {
+    background: rgba(250,250,247,0.06);
+    border: 0.5px solid rgba(250,250,247,0.12);
+    border-radius: 6px;
+    color: var(--ink-3);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .lang-btn:hover { color: var(--ink-2); border-color: rgba(250,250,247,0.25); }
+  .lang-btn.active { color: var(--amber); border-color: rgba(212,165,116,0.4); }
+
+  @media print {
+    .ambient, .grain, .lang-switch { display: none; }
+    body { background: #fff; color: #000; }
+  }
+</style>
+</head>
+<body>
+  <div class="ambient"></div>
+  <div class="grain"></div>
+
+  <!-- Language toggle -->
+  <div class="lang-switch">
+    <button class="lang-btn active" data-lang="tr" onclick="setLang('tr')">TR</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+
+  <main class="stage">
+    <a href="https://vellumapp.net" class="lockup" aria-label="Vellum">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M5 6 L12 18 L19 6" stroke="#d4a574" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M3 12 Q6.5 9 9 12 T14 12 T21 12" stroke="#c75d4b" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0.85"/>
+      </svg>
+      <span class="lockup-word">Vellum</span>
+    </a>
+
+    <div class="seal-wrap" aria-hidden="true">
+      <div class="seal"></div>
+      <div class="ribbon" data-i18n="ribbon">HED&#304;YE</div>
+      <div class="seal-emblem">
+        <div class="seal-v">V</div>
+        <div class="seal-label">SEALED</div>
+      </div>
+    </div>
+
+    <div class="eyebrow" data-i18n="eyebrow">sana bir sey birakildi</div>
+    <h1 class="hero" id="hero-heading"></h1>
+    <p class="lede" data-i18n="lede"></p>
+
+    <div class="cta">
+      <a id="appstore-cta" class="btn-primary" data-i18n-label="cta">
+        <svg width="22" height="22" viewBox="0 0 384 512" fill="#1a1208" aria-hidden="true">
+          <path d="M318.7 268c-.5-58.3 47.5-86.3 49.6-87.6-27-39.4-69-44.8-83.9-45.4-35.7-3.6-69.7 20.9-87.8 20.9s-46.1-20.4-75.8-19.8c-39 .6-75 22.7-95 57.6-40.5 70.2-10.4 174.1 29.1 231 19.3 27.8 42.3 59 72.5 57.9 29.1-1.2 40.1-18.8 75.3-18.8 35.2 0 45 18.8 75.7 18.2 31.2-.5 51-28.3 70.2-56.3 22.1-32.2 31.2-63.4 31.7-65-.7-.3-60.9-23.3-61.6-92.5zM261.3 81.9c16-19.4 26.8-46.4 23.8-73.1-23 1-50.8 15.3-67.3 34.5-14.8 17.1-27.7 44.6-24.2 71 25.6 2 51.7-13 67.7-32.4z"/>
+        </svg>
+        <span data-i18n="cta"></span>
+      </a>
+    </div>
+
+    <div class="reminder" role="note">
+      <div class="reminder-glyph">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M10 13a5 5 0 007 0l3-3a5 5 0 00-7-7l-1 1"/>
+          <path d="M14 11a5 5 0 00-7 0l-3 3a5 5 0 007 7l1-1"/>
+        </svg>
+      </div>
+      <div class="reminder-body" data-i18n-html="reminder"></div>
+    </div>
+
+    <div class="trust" aria-label="Trust">
+      <div class="trust-row">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span data-i18n="trust1"></span>
+      </div>
+      <div class="trust-row">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span data-i18n="trust2"></span>
+      </div>
+      <div class="trust-row">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="5" y="11" width="14" height="10" rx="2"/>
+          <path d="M8 11V7a4 4 0 018 0v4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span data-i18n="trust3"></span>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div><span class="word">vellum</span></div>
+      <div style="margin-top:6px" data-i18n="tagline"></div>
+      <div style="margin-top:14px; font-size:10px; letter-spacing:0.4px;">
+        <a href="https://vellumapp.net/privacy" data-i18n="privacy"></a> &nbsp;&middot;&nbsp;
+        <a href="https://vellumapp.net/terms" data-i18n="terms"></a> &nbsp;&middot;&nbsp;
+        <a href="mailto:hello@vellumapp.net" data-i18n="contact"></a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    var I18N = {
+      tr: {
+        ribbon: "HEDİYE",
+        eyebrow: "sana bir şey bırakıldı",
+        hero: function(s) { return '<span class="accent">' + s + '</span><br/>sana bir kapsül gönderdi'; },
+        lede: "Yıllar sonra açılacak bir ses kapsülü seni bekliyor. Almak için Vellum’u yükle.",
+        cta: "App Store’dan indir",
+        reminder: "Yükledikten sonra <strong>buraya geri dön ve bu bağlantıya tekrar dokun.</strong> Hediyeni otomatik bulamıyoruz — bağlantı uygulamayı doğru yere açar.",
+        trust1: "Kapsül senin iCloud’unda, uçtan uça şifreli",
+        trust2: "Tek seferlik · ömür boyu senin · ödeme yok",
+        trust3: "Açılış tarihinden önce kimse — biz dahil — açamaz",
+        tagline: "sesini yıllara emanet et",
+        privacy: "Gizlilik",
+        terms: "Şartlar",
+        contact: "İletişim"
+      },
+      en: {
+        ribbon: "GIFT",
+        eyebrow: "something was left for you",
+        hero: function(s) { return '<span class="accent">' + s + '</span><br/>sent you a capsule'; },
+        lede: "A voice capsule awaits you, to be opened years from now. Download Vellum to claim it.",
+        cta: "Download on the App Store",
+        reminder: "After installing, <strong>come back here and tap this link again.</strong> We can’t find your gift automatically — the link opens the app to the right place.",
+        trust1: "Capsule lives in your iCloud, end-to-end encrypted",
+        trust2: "One-time · yours forever · no payment required",
+        trust3: "No one — not even us — can open it before the unlock date",
+        tagline: "entrust your voice to the years",
+        privacy: "Privacy",
+        terms: "Terms",
+        contact: "Contact"
+      }
+    };
+
+    var senderName = '';
+    var currentLang = 'tr';
+
+    function sanitize(str) {
+      var d = document.createElement('div');
+      d.appendChild(document.createTextNode(str));
+      return d.innerHTML;
+    }
+
+    function detectLang() {
+      var nav = (navigator.language || '').toLowerCase();
+      if (nav.startsWith('tr')) return 'tr';
+      return 'en';
+    }
+
+    function setLang(lang) {
+      currentLang = lang;
+      var strings = I18N[lang] || I18N.en;
+
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (strings[key]) el.textContent = strings[key];
+      });
+
+      document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n-html');
+        if (strings[key]) el.innerHTML = strings[key];
+      });
+
+      var heading = document.getElementById('hero-heading');
+      if (heading && strings.hero) {
+        heading.innerHTML = strings.hero(sanitize(senderName));
+      }
+
+      document.title = lang === 'tr'
+        ? 'Vellum · Sana bir kapsül gönderildi'
+        : 'Vellum · You received a capsule';
+    }
+
+    (function init() {
+      try {
+        var params = new URLSearchParams(location.search);
+        senderName = (params.get('sender') || params.get('from') || params.get('s') || '').replace(/[<>]/g, '').slice(0, 40);
+        if (!senderName) senderName = '?';
+      } catch (e) {
+        senderName = '?';
+      }
+
+      var userLang = detectLang();
+      setLang(userLang);
+
+      var isIOS = /iP(hone|ad|od)/i.test(navigator.userAgent);
+      var ctaEl = document.getElementById('appstore-cta');
+      if (ctaEl) {
+        if (isIOS) {
+          ctaEl.href = 'https://apps.apple.com/app/vellum/idAPPID';
+        } else {
+          ctaEl.href = 'https://apps.apple.com/app/vellum/idAPPID';
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
