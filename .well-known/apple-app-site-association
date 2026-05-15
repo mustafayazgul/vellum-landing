@@ -1,13 +1,29 @@
 {
-    "applinks": {
-        "apps": [],
-        "details": [
-            {
-                "appID": "GUEKT879D3.com.vellumapp.vellum",
-                "paths": [
-                    "*"
-                ]
-            }
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "GUEKT879D3.com.vellumapp.vellum"
+        ],
+        "components": [
+          {
+            "/": "/gift",
+            "?": {
+              "share": "?*"
+            },
+            "comment": "Gift capsule claim link"
+          },
+          {
+            "/": "/gift/*",
+            "comment": "Gift capsule claim with path token"
+          }
         ]
-    }
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "GUEKT879D3.com.vellumapp.vellum"
+    ]
+  }
 }
