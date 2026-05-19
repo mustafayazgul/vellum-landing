@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Vellum</title>
+<meta name="description" content="Vellum Terms of Service">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --bg: #faf8f3;
+    --bg-elevated: #ffffff;
+    --ink: #1a1612;
+    --ink-soft: #5a544c;
+    --ink-faint: #8a8377;
+    --gold: #b8893d;
+    --line: #e6dfd1;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 17px;
+  }
+
+  .nav {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 1rem 2rem;
+  }
+  .nav-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav a {
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .nav-brand {
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .nav-links a {
+    color: rgba(250, 248, 243, 0.7);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--bg); }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 0.8rem;
+    color: var(--ink);
+  }
+
+  h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1.8rem 0 0.5rem;
+    color: var(--ink);
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: var(--ink-soft);
+  }
+
+  strong { color: var(--ink); font-weight: 600; }
+
+  ul, ol {
+    margin: 0 0 1rem 1.5rem;
+    color: var(--ink-soft);
+  }
+
+  li { margin-bottom: 0.4rem; }
+
+  a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border 0.2s;
+  }
+  a:hover { border-bottom-color: var(--gold); }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 3rem 0;
+  }
+
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.88em;
+    background: rgba(184, 137, 61, 0.1);
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    color: var(--ink);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+  th {
+    font-weight: 600;
+    color: var(--ink);
+    background: rgba(184, 137, 61, 0.05);
+  }
+  td { color: var(--ink-soft); }
+
+  .meta {
+    color: var(--ink-faint);
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .locale-switcher {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--line);
+    margin-top: 4rem;
+    color: var(--ink-faint);
+    font-size: 0.85rem;
+  }
+  .locale-switcher a {
+    margin: 0 0.4rem;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--ink-faint);
+    font-size: 0.85rem;
+  }
+
+  [dir="rtl"] ul, [dir="rtl"] ol {
+    margin: 0 1.5rem 1rem 0;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Vellum</a>
+    <div class="nav-links">
+      <a href="/en/privacy/">Privacy</a>
+      <a href="/en/terms/">Terms</a>
+      <a href="/en/support/">Support</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<h1>Terms of Service</h1>
+<p><strong>Last updated:</strong> May 19, 2026</p>
+<p>By using Vellum, you agree to the following terms.</p>
+<h2>1. The Service</h2>
+<p>Vellum is an application that lets users create audio and video capsules to be opened at a future date, either by themselves or by others. Vellum stores your data in your Apple iCloud account and keeps no data on our own servers.</p>
+<h2>2. Account</h2>
+<p>To use Vellum, you must have an active Apple ID and iCloud account. Vellum has no account system of its own — your Apple identity is your Vellum identity.</p>
+<h2>3. Fees and Purchases</h2>
+<p>Vellum works on the following model:</p>
+<ul>
+<li><strong>Free trial:</strong> New users can create a limited number of capsules.</li>
+<li><strong>One-time purchases:</strong> An IAP (in-app purchase) is triggered when you create each capsule. Bundle packs are also available.</li>
+<li><strong>No subscriptions.</strong> You only pay for the capsule you use.</li>
+</ul>
+<p>Purchases are processed through the Apple App Store. Apple's refund policy applies: https://support.apple.com/HT204084</p>
+<h2>4. Retention Period</h2>
+<p>Each capsule has its own retention period (1 month, 1 year, 5 years, 25 years, etc.). This period is set at purchase time and covers:</p>
+<ul>
+<li>Holding the capsule until its opening date</li>
+<li>Keeping it accessible for some time after the opening date</li>
+</ul>
+<p>After the period ends, the capsule may not be deleted; this depends on your Apple iCloud account capacity. Vellum guarantees capsule availability throughout this period.</p>
+<h2>5. Gift Feature</h2>
+<p>You can send a capsule as a gift to another person:</p>
+<ul>
+<li>The capsule is verified using the phone number associated with the recipient's Apple ID.</li>
+<li>Once the recipient accepts, the capsule becomes <strong>theirs</strong>.</li>
+<li>The recipient can continue to use the capsule even if you delete Vellum.</li>
+<li>If the recipient declines or the link expires, the capsule stays in your account.</li>
+</ul>
+<p>If the gift function is misused (harassment, spam), Vellum may restrict that account's gift-sending privileges.</p>
+<h2>6. Prohibited Uses</h2>
+<p>Vellum may not be used for the following purposes:</p>
+<ul>
+<li>Illegal, harmful, or threatening content</li>
+<li>Harassment, hate speech, discrimination</li>
+<li>Sexual content (especially involving minors)</li>
+<li>Copyright-infringing content</li>
+<li>Content promoting violence, self-harm, or suicide</li>
+<li>Misleading or fraudulent use</li>
+<li>Attempts to compromise system security</li>
+</ul>
+<p>Accounts violating these rules may be terminated without notice.</p>
+<h2>7. Intellectual Property</h2>
+<ul>
+<li><strong>Your capsules are yours:</strong> You retain all rights to the capsules you create in Vellum.</li>
+<li><strong>Vellum's software is ours:</strong> App code, design, and trademark belong to Vellum.</li>
+<li>Vellum has no access to your capsules and therefore does not use them for commercial purposes.</li>
+</ul>
+<h2>8. Disclaimer</h2>
+<p>Vellum is provided as a tool, and we are not responsible for the following:</p>
+<ul>
+<li>Apple iCloud service outages</li>
+<li>Deletion or suspension of your iCloud account</li>
+<li>Compatibility issues with iOS updates</li>
+<li>Data loss (beyond Apple iCloud backup measures)</li>
+<li>Recipient's misuse of capsules</li>
+</ul>
+<p>Vellum cannot guarantee that any capsule will open on a specific date (this depends on Apple iCloud service continuity).</p>
+<h2>9. Service Changes</h2>
+<p>Vellum may modify, add, or remove features at its sole discretion. Significant changes will be announced via in-app notifications.</p>
+<h2>10. Termination</h2>
+<p>If you violate these terms or Apple removes you from the App Store, your account's access to Vellum may be terminated. Your existing capsules will remain in your iCloud account.</p>
+<h2>11. Governing Law</h2>
+<p>These terms are governed by the laws of [Jurisdiction]. Disputes are resolved in [Jurisdiction] courts.</p>
+<h2>12. Contact</h2>
+<p>For questions:</p>
+<p><strong>Email:</strong> support@vellumapp.net
+<strong>Web:</strong> https://vellumapp.net</p>
+</main>
+
+<footer>
+  © 2026 Vellum · <a href="mailto:hello@vellumapp.net">hello@vellumapp.net</a>
+</footer>
+
+</body>
+</html>
