@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شروط الخدمة — Vellum</title>
+  <meta name="description" content="Vellum شروط الخدمة">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+
+    [dir="rtl"] th,
+    [dir="rtl"] td {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/ar/privacy/">الخصوصية</a>
+        <a href="/ar/terms/">الشروط</a>
+        <a href="/ar/support/">الدعم</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>شروط الخدمة</h1>
+    <p><strong>آخر تحديث:</strong> ١٩ مايو ٢٠٢٦</p>
+    <p>باستخدامك لتطبيق Vellum، فإنك توافق على الشروط التالية.</p>
+    <h2>١. الخدمة</h2>
+    <p>Vellum هو تطبيق يتيح للمستخدمين إنشاء كبسولات صوتية ومرئية ليتم فتحها في تاريخ مستقبلي، سواء من قبل أنفسهم أو من قبل الآخرين. يقوم Vellum بتخزين بياناتك في حساب Apple iCloud الخاص بك ولا يحتفظ بأي بيانات على خوادمنا الخاصة.</p>
+    <h2>٢. الحساب</h2>
+    <p>لاستخدام Vellum، يجب أن يكون لديك حساب Apple ID وحساب iCloud نشطان. لا يحتوي Vellum على نظام حسابات خاص به — هويتك لدى Apple هي هويتك في Vellum.</p>
+    <h2>٣. الرسوم والمشتريات</h2>
+    <p>يعمل Vellum وفقاً للنموذج التالي:</p>
+    <ul>
+      <li><strong>الفترة التجريبية المجانية:</strong> يمكن للمستخدمين الجدد إنشاء عدد محدود من الكبسولات.</li>
+      <li><strong>عمليات الشراء لمرة واحدة:</strong> يتم تفعيل عملية شراء داخل التطبيق عند إنشاء كل كبسولة. تتوفر أيضاً باقات كبسولات.</li>
+      <li><strong>لا توجد اشتراكات.</strong> أنت تدفع فقط مقابل الكبسولة التي تستخدمها.</li>
+    </ul>
+    <p>تتم معالجة عمليات الشراء من خلال متجر تطبيقات Apple App Store. تطبق سياسة الاسترداد الخاصة بشركة Apple: https://support.apple.com/HT204084</p>
+    <h2>٤. فترة الاحتفاظ</h2>
+    <p>لكل كبسولة فترة احتفاظ خاصة بها (شهر واحد، سنة واحدة، ٥ سنوات، ٢٥ سنة، إلخ). يتم تحديد هذه الفترة عند وقت الشراء وتغطي:</p>
+    <ul>
+      <li>الاحتفاظ بالكبسولة حتى تاريخ فتحها</li>
+      <li>إبقاؤها قابلة للوصول لفترة من الوقت بعد تاريخ الفتح</li>
+    </ul>
+    <p>بعد انتهاء الفترة، قد لا يتم حذف الكبسولة; ويعتمد ذلك على سعة حساب Apple iCloud الخاص بك. يضمن Vellum توفر الكبسولة طوال هذه الفترة.</p>
+    <h2>٥. ميزة الهدايا</h2>
+    <p>يمكنك إرسال كبسولة كهدية لشخص آخر:</p>
+    <ul>
+      <li>يتم التحقق من الكبسولة باستخدام رقم الهاتف المرتبط بمعرّف Apple ID الخاص بالمستلم.</li>
+      <li>بمجرد قبول المستلم، تصبح الكبسولة <strong>ملكاً له</strong>.</li>
+      <li>يمكن للمستلم الاستمرار في استخدام الكبسولة حتى إذا قمت بحذف Vellum.</li>
+      <li>إذا رفض المستلم أو انتهت صلاحية الرابط، تظل الكبسولة في حسابك.</li>
+    </ul>
+    <p>إذا تم إساءة استخدام وظيفة الهدايا (المضايقة، البريد العشوائي)، فقد يحد Vellum من امتيازات إرسال الهدايا الخاصة بهذا الحساب.</p>
+    <h2>٦. الاستخدامات المحظورة</h2>
+    <p>لا يجوز استخدام Vellum للأغراض التالية:</p>
+    <ul>
+      <li>المحتوى غير القانوني، الضار، أو الذي ينطوي على تهديد</li>
+      <li>المضايقة، خطاب الكراهية، التمييز</li>
+      <li>المحتوى الجنسي (خاصة ما يتعلق بالقصر)</li>
+      <li>المحتوى الذي ينتهك حقوق الطبع والنشر</li>
+      <li>المحتوى الذي يروج للعنف، إيذاء النفس، أو الانتحار</li>
+      <li>الاستخدام المضلل أو الاحتيالي</li>
+      <li>محاولات اختراق أمن النظام</li>
+    </ul>
+    <p>قد يتم إنهاء الحسابات التي تنتهك هذه القواعد دون إشعار مسبق.</p>
+    <h2>٧. الملكية الفكرية</h2>
+    <ul>
+      <li><strong>كبسولاتك ملكك:</strong> أنت تحتفظ بجميع الحقوق في الكبسولات التي تنشئها في Vellum.</li>
+      <li><strong>برمجيات Vellum ملكنا:</strong> رمز التطبيق، والتصميم، والعلامة التجارية تخص Vellum.</li>
+      <li>لا يمتلك Vellum أي وصول إلى كبسولاتك وبالتالي لا يستخدمها لأغراض تجارية.</li>
+    </ul>
+    <h2>٨. إخلاء المسؤولية</h2>
+    <p>يتم تقديم Vellum كأداة، ونحن لسنا مسؤولين عن التالي:</p>
+    <ul>
+      <li>انقطاع خدمات Apple iCloud</li>
+      <li>حذف أو تعليق حساب iCloud الخاص بك</li>
+      <li>مشكلات التوافق مع تحديثات iOS</li>
+      <li>فقدان البيانات (خارج نطاق تدابير النسخ الاحتياطي لـ Apple iCloud)</li>
+      <li>إساءة استخدام الكبسولات من قبل المستلم</li>
+    </ul>
+    <p>لا يمكن لـ Vellum ضمان فتح أي كبسولة في تاريخ محدد (يعتمد ذلك على استمرارية خدمة Apple iCloud).</p>
+    <h2>٩. تغييرات الخدمة</h2>
+    <p>يجوز لـ Vellum تعديل الميزات أو إضافتها أو إزالتها وفقاً لتقديره الخاص. سيتم الإعلان عن التغييرات الهامة عبر إشعارات داخل التطبيق.</p>
+    <h2>١٠. الإنهاء</h2>
+    <p>إذا انتهكت هذه الشروط أو قامت Apple بإزالتك من متجر التطبيقات، فقد يتم إنهاء وصول حسابك إلى Vellum. ستظل كبسولاتك الحالية في حساب iCloud الخاص بك.</p>
+    <h2>١١. القانون الحاكم</h2>
+    <p>تخضع هذه الشروط لقوانين [Jurisdiction]. وتتم تسوية النزاعات في محاكم [Jurisdiction].</p>
+    <h2>١٢. الاتصال</h2>
+    <p>للأسئلة:</p>
+    <p><strong>البريد الإلكتروني:</strong> vellumcapsuleapp@gmail.com
+      <strong>الموقع الإلكتروني:</strong> https://vellumapp.net</p>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>

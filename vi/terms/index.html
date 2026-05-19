@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Điều khoản dịch vụ — Vellum</title>
+  <meta name="description" content="Vellum Điều khoản dịch vụ">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/vi/privacy/">Quyền riêng tư</a>
+        <a href="/vi/terms/">Điều khoản</a>
+        <a href="/vi/support/">Hỗ trợ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Điều khoản dịch vụ</h1>
+    <p><strong>Cập nhật lần cuối:</strong> Ngày 19 tháng 5 năm 2026</p>
+    <p>Bằng cách sử dụng Vellum, bạn đồng ý với các điều khoản sau đây.</p>
+    <h2>1. Dịch vụ</h2>
+    <p>Vellum là một ứng dụng cho phép người dùng tạo ra các hộp thư âm thanh và video để mở vào một ngày trong tương lai, bởi chính họ hoặc bởi người khác. Vellum lưu trữ dữ liệu của bạn trong tài khoản Apple iCloud của bạn và không giữ bất kỳ dữ liệu nào trên máy chủ của riêng chúng tôi.</p>
+    <h2>2. Tài khoản</h2>
+    <p>Để sử dụng Vellum, bạn phải có tài khoản Apple ID và iCloud đang hoạt động. Vellum không có hệ thống tài khoản riêng — danh tính Apple của bạn chính là danh tính Vellum của bạn.</p>
+    <h2>3. Phí và Mua hàng</h2>
+    <p>Vellum hoạt động theo mô hình sau:</p>
+    <ul>
+      <li><strong>Dùng thử miễn phí:</strong> Người dùng mới có thể tạo một số lượng hộp thư giới hạn.</li>
+      <li><strong>Mua một lần:</strong> Giao dịch mua hàng trong ứng dụng (IAP) được kích hoạt khi bạn tạo mỗi hộp thư. Các gói mua chung (bundle packs) cũng có sẵn.</li>
+      <li><strong>Không có đăng ký định kỳ:</strong> Bạn chỉ trả tiền cho hộp thư bạn sử dụng.</li>
+    </ul>
+    <p>Các giao dịch mua hàng được xử lý thông qua Apple App Store. Chính sách hoàn tiền của Apple sẽ được áp dụng: https://support.apple.com/HT204084</p>
+    <h2>4. Thời hạn lưu trữ</h2>
+    <p>Mỗi hộp thư có thời hạn lưu trữ riêng (1 tháng, 1 năm, 5 năm, 25 năm, v.v.). Thời hạn này được thiết lập tại thời điểm mua và bao gồm:</p>
+    <ul>
+      <li>Lưu giữ hộp thư cho đến ngày mở</li>
+      <li>Giữ cho nó có thể truy cập được trong một thời gian sau ngày mở</li>
+    </ul>
+    <p>Sau khi thời hạn kết thúc, hộp thư có thể không bị xóa; điều này phụ thuộc vào dung lượng tài khoản Apple iCloud của bạn. Vellum đảm bảo tính sẵn có của hộp thư trong suốt thời gian này.</p>
+    <h2>5. Tính năng quà tặng</h2>
+    <p>Bạn có thể gửi một hộp thư làm quà tặng cho người khác:</p>
+    <ul>
+      <li>Hộp thư được xác minh bằng số điện thoại được liên kết với Apple ID của người nhận.</li>
+      <li>Sau khi người nhận chấp nhận, hộp thư sẽ trở thành <strong>của họ</strong>.</li>
+      <li>Người nhận có thể tiếp tục sử dụng hộp thư ngay cả khi bạn xóa Vellum.</li>
+      <li>Nếu người nhận từ chối hoặc liên kết hết hạn, hộp thư vẫn nằm trong tài khoản của bạn.</li>
+    </ul>
+    <p>Nếu tính năng quà tặng bị lạm dụng (quấy rối, spam), Vellum may restrict that account's gift-sending privileges.</p>
+    <h2>6. Các hành vi bị cấm</h2>
+    <p>Vellum không được sử dụng cho các mục đích sau:</p>
+    <ul>
+      <li>Nội dung bất hợp pháp, có hại hoặc đe dọa</li>
+      <li>Quấy rối, ngôn từ kích động thù địch, phân biệt đối xử</li>
+      <li>Nội dung tình dục (đặc biệt liên quan đến trẻ vị thành niên)</li>
+      <li>Nội dung vi phạm bản quyền</li>
+      <li>Nội dung khuyến khích bạo lực, tự hại hoặc tự tử</li>
+      <li>Sử dụng sai lệch hoặc lừa đảo</li>
+      <li>Nỗ lực xâm nhập bảo mật hệ thống</li>
+    </ul>
+    <p>Các tài khoản vi phạm các quy tắc này có thể bị chấm dứt hoạt động mà không cần thông báo trước.</p>
+    <h2>7. Sở hữu trí tuệ</h2>
+    <ul>
+      <li><strong>Các hộp thư là của bạn:</strong> Bạn giữ mọi quyền đối với các hộp thư bạn tạo trong Vellum.</li>
+      <li><strong>Phần mềm của Vellum là của chúng tôi:</strong> Mã ứng dụng, thiết kế và nhãn hiệu thuộc sở hữu của Vellum.</li>
+      <li>Vellum không có quyền truy cập vào các hộp thư của bạn và do đó không sử dụng chúng cho mục đích thương mại.</li>
+    </ul>
+    <h2>8. Tuyên bố miễn trừ trách nhiệm</h2>
+    <p>Vellum được cung cấp như một công cụ và chúng tôi không chịu trách nhiệm về các trường hợp sau:</p>
+    <ul>
+      <li>Sự cố ngừng dịch vụ Apple iCloud</li>
+      <li>Xóa hoặc đình chỉ tài khoản iCloud của bạn</li>
+      <li>Sự cố tương thích với các bản cập nhật iOS</li>
+      <li>Mất dữ liệu (ngoài các biện pháp sao lưu Apple iCloud)</li>
+      <li>Sử dụng sai hộp thư của người nhận</li>
+    </ul>
+    <p>Vellum không thể đảm bảo rằng bất kỳ hộp thư nào cũng sẽ mở vào một ngày cụ thể (điều này phụ thuộc vào tính liên tục của dịch vụ Apple iCloud).</p>
+    <h2>9. Thay đổi dịch vụ</h2>
+    <p>Vellum có thể sửa đổi, thêm hoặc loại bỏ các tính năng theo quyết định riêng của mình. Những thay đổi quan trọng sẽ được thông báo thông qua ứng dụng.</p>
+    <h2>10. Chấm dứt hoạt động</h2>
+    <p>Nếu bạn vi phạm các điều khoản này hoặc Apple xóa bạn khỏi App Store, quyền truy cập của tài khoản của bạn vào Vellum có thể bị chấm dứt. Các hộp thư hiện tại của bạn vẫn sẽ nằm trong tài khoản iCloud của bạn.</p>
+    <h2>11. Luật áp dụng</h2>
+    <p>Các điều khoản này được điều chỉnh bởi luật pháp của [Jurisdiction]. Các tranh chấp được giải quyết tại các tòa án của [Jurisdiction].</p>
+    <h2>12. Liên hệ</h2>
+    <p>Đối với các câu hỏi:</p>
+    <p><strong>Email:</strong> vellumcapsuleapp@gmail.com
+      <strong>Web:</strong> https://vellumapp.net</p>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>

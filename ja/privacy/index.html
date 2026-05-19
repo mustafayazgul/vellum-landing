@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — Vellum</title>
+  <meta name="description" content="Vellum プライバシーポリシー">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/ja/privacy/">プライバシー</a>
+        <a href="/ja/terms/">利用規約</a>
+        <a href="/ja/support/">サポート</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>プライバシーポリシー</h1>
+    <p><strong>最終更新日:</strong> 2026年5月19日</p>
+    <p>Vellumをご利用いただきありがとうございます。このプライバシーポリシーは、Vellumアプリケーション（以下「Vellum」）をご利用の際にお客様のデータがどのように取り扱われるかについて説明するものです。</p>
+    <h2>要約</h2>
+    <ul>
+      <li>Vellumにはサーバーがありません。</li>
+      <li>すべてのカプセルはApple iCloudアカウントに保存され、エンドツーエンドで暗号化されます。</li>
+      <li>当社がお客様の録音、録画、または個人的なメモにアクセスすることは一切ありません。</li>
+      <li>ギフトを送信する際、カプセルはiCloudを介して直接受信者に送信されます。私たちの間に仲介者は存在しません。</li>
+      <li>当社は匿名の利用統計を収集する場合があります。これらの統計情報はお客様個人を特定するものではありません。</li>
+    </ul>
+    <h2>1. 当社について</h2>
+    <p>VellumはVellumによって開発されています。お問い合わせ窓口：vellumcapsuleapp@gmail.com</p>
+    <h2>2. 収集するデータ</h2>
+    <h3>2.1 収集しないデータ</h3>
+    <p>Vellumは、以下のデータを<strong>収集、閲覧、または当社のサーバーに保存することはありません</strong>。</p>
+    <ul>
+      <li>お客様の録音データ</li>
+      <li>お客様の録画データ</li>
+      <li>カプセルの内容</li>
+      <li>個人的なメモ</li>
+      <li>受信者の情報（電話番号、氏名）</li>
+      <li>送受信したカプセルのメタデータ</li>
+    </ul>
+    <p>これらはすべて<strong>お客様のApple iCloudアカウント</strong>に保存されます。Vellumは単なるインターフェースであり、お客様のデータにアクセスするための独自のサーバーは所有していません。</p>
+    <h3>2.2 Appleによって管理されるデータ</h3>
+    <p>以下はApple iCloudサービスを介して管理されます。</p>
+    <ul>
+      <li>CloudKitデータストレージ</li>
+      <li>プッシュ通知の配信（Appleプッシュ通知サービス）</li>
+      <li>iCloudの同期とバックアップ</li>
+    </ul>
+    <p>このデータのプライバシーは、Apple'sのプライバシーポリシーによって規定されています：https://www.apple.com/legal/privacy/</p>
+    <h3>2.3 匿名の利用データ（任意）</h3>
+    <p>Vellumを改善するために、当社は以下の匿名データを収集する場合があります。</p>
+    <ul>
+      <li>アプリの起動頻度</li>
+      <li>使用されている機能（例：「カプセルを作成」のタップなど）</li>
+      <li>クラッシュレポートとエラー統計</li>
+      <li>アプリのバージョン、デバイスのモデル、iOSのバージョン</li>
+    </ul>
+    <p><strong>このデータはお客様個人を特定するものではありません。</strong> カプセルの内容がこれらの統計に含まれることはありません。</p>
+    <p>このデータの収集を希望されない場合は、iOSの設定で無効にすることができます：
+      - 設定 → プライバシーとセキュリティ → 解析と改善 → Appデベロッパと共有（オフにする）</p>
+    <h2>3. 第三者サービス</h2>
+    <p>Vellumは以下の第三者サービスを使用しています。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>サービス</th>
+          <th>目的</th>
+          <th>アクセスされるデータ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple iCloud / CloudKit</td>
+          <td>データストレージ</td>
+          <td>暗号化されたカプセル</td>
+        </tr>
+        <tr>
+          <td>Apple Push Notification</td>
+          <td>通知の配信</td>
+          <td>空の通知ペイロード</td>
+        </tr>
+        <tr>
+          <td>RevenueCat</td>
+          <td>購入取引</td>
+          <td>匿名取引ID</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Vellumは、広告またはマーケティング目的で第三者とデータを<strong>販売または共有することはありません</strong>。
+    </p>
+    <h2>4. ギフト機能とデータの共有</h2>
+    <p>カプセルをギフトとして他の誰かに送信する場合：</p>
+    <ol>
+      <li>お客様のiCloudアカウントにCKShare（Appleのネイティブ共有システム）が作成されます。</li>
+      <li>受信者にリンク（ユニバーサルリンク）が送信されます。</li>
+      <li>受信者がリンクを開くと、カプセルが受信者のiCloudアカウントにコピーされます。</li>
+      <li>カプセルは受信者のアカウントのものになります。</li>
+    </ol>
+    <p>このプロセス全体を通じて、Vellumが<strong>サーバーにデータを保存することはありません</strong>。転送はすべてApple iCloudを介して行われます。</p>
+    <p>電話番号や名前などの受信者情報はカプセルのメタデータに保持され、カプセルが受信者に届くまで<strong>お客様のiCloudアカウント</strong>に留まります。受信者が承諾すると、メタデータは受信者に転送されます。</p>
+    <h2>5. データの保持</h2>
+    <p>Vellumのカプセルは、<strong>お客様が保持する限り</strong>、またはアカウントを閉鎖するまで保持されます。自動的に削除されることはありません。カプセルはお客様のものです。</p>
+    <p>匿名の利用統計は、Apple Analyticsによって7〜14日間保持されます。</p>
+    <h2>6. データに関する権利</h2>
+    <p>Apple iCloudユーザーとして、お客様は（Appleを通じて）以下の権利を有します。</p>
+    <ul>
+      <li><strong>アクセス権：</strong>iCloud Driveを介してカプセルを表示できます。</li>
+      <li><strong>削除権：</strong>アプリ内またはiCloud設定からいつでもカプセルを削除できます。</li>
+      <li><strong>移行権：</strong>AppleはiCloudデータの書き出しを許可しています（privacy.apple.com）。</li>
+      <li><strong>訂正権：</strong>カプセルはお客様のものであり、自由に変更できます。</li>
+    </ul>
+    <p>Vellumに関する具体的なデータ要求について：vellumcapsuleapp@gmail.com</p>
+    <h2>7. 子どものプライバシー</h2>
+    <p>Vellumは13歳未満のお子様を対象としていません。ユーザーが13歳未満であることが判明した場合、アカウント削除についてAppleに連絡します。</p>
+    <h2>8. 国際的なデータ転送</h2>
+    <p>AppleはiCloudデータをグローバルデータセンターに保存します。詳細はAppleのプライバシーポリシーをご確認ください。</p>
+    <h2>9. ポリシーの変更</h2>
+    <p>当社は本ポリシーを随時更新する場合があります。重大な変更がある場合は、アプリ内通知でお知らせします。</p>
+    <h2>10. お問い合わせ</h2>
+    <p>ご質問やご不明な点がある場合：</p>
+    <p><strong>メール：</strong> vellumcapsuleapp@gmail.com
+      <strong>ウェブ：</strong> https://vellumapp.net
+    </p>
+    <p>AppleのApp Storeから問題を報告する場合：
+      - App Store → Vellum → 問題を報告</p>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>

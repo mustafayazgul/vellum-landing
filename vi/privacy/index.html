@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính sách bảo mật — Vellum</title>
+  <meta name="description" content="Chính sách bảo mật của Vellum">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/vi/privacy/">Quyền riêng tư</a>
+        <a href="/vi/terms/">Điều khoản</a>
+        <a href="/vi/support/">Hỗ trợ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Chính sách bảo mật</h1>
+    <p><strong>Cập nhật lần cuối:</strong> Ngày 19 tháng 5 năm 2026</p>
+    <p>Cảm ơn bạn đã sử dụng Vellum. Chính sách bảo mật này giải thích cách dữ liệu của bạn được xử lý khi bạn sử dụng ứng dụng Vellum ("Vellum").</p>
+    <h2>Tóm tắt nhanh</h2>
+    <ul>
+      <li>Vellum không có máy chủ.</li>
+      <li>Tất cả các hộp thư của bạn được lưu trữ trong tài khoản Apple iCloud của bạn, được mã hóa đầu cuối (end-to-end).</li>
+      <li>Chúng tôi không bao giờ có quyền truy cập vào các bản ghi âm, ghi hình hoặc ghi chú cá nhân của bạn.</li>
+      <li>Khi bạn gửi quà tặng, hộp thư sẽ chuyển trực tiếp qua iCloud tới người nhận. Không có bên trung gian nào giữa chúng ta.</li>
+      <li>Chúng tôi có thể thu thập số liệu thống kê sử dụng ẩn danh; những số liệu thống kê này không định danh cá nhân bạn.</li>
+    </ul>
+    <h2>1. Chúng tôi là ai</h2>
+    <p>Vellum được phát triển bởi Vellum. Để liên hệ: vellumcapsuleapp@gmail.com</p>
+    <h2>2. Dữ liệu chúng tôi thu thập</h2>
+    <h3>2.1 Dữ liệu chúng tôi không thu thập</h3>
+    <p>Vellum <strong>không thu thập, xem hoặc lưu trữ trên máy chủ của chúng tôi</strong> các dữ liệu sau:</p>
+    <ul>
+      <li>Các bản ghi âm của bạn</li>
+      <li>Các bản ghi hình của bạn</li>
+      <li>Nội dung trong các hộp thư của bạn</li>
+      <li>Các ghi chú cá nhân của bạn</li>
+      <li>Thông tin người nhận (số điện thoại, tên)</li>
+      <li>Siêu dữ liệu của các hộp thư đã gửi hoặc nhận</li>
+    </ul>
+    <p>Tất cả những thông tin này được lưu trữ trong <strong>tài khoản Apple iCloud của bạn</strong>. Vellum chỉ là một giao diện — chúng tôi không có máy chủ riêng để truy cập dữ liệu của bạn.</p>
+    <h3>2.2 Dữ liệu do Apple quản lý</h3>
+    <p>Các mục sau đây được quản lý thông qua dịch vụ Apple iCloud:</p>
+    <ul>
+      <li>Lưu trữ dữ liệu CloudKit</li>
+      <li>Gửi thông báo đẩy (dịch vụ Apple Push Notification)</li>
+      <li>Đồng bộ hóa và sao lưu trên iCloud</li>
+    </ul>
+    <p>Quyền riêng tư của dữ liệu này được điều chỉnh bởi chính sách bảo mật của Apple: https://www.apple.com/legal/privacy/</p>
+    <h3>2.3 Dữ liệu sử dụng ẩn danh (Tùy chọn)</h3>
+    <p>Để cải thiện Vellum, chúng tôi có thể thu thập các dữ liệu ẩn danh sau:</p>
+    <ul>
+      <li>Tần suất mở ứng dụng</li>
+      <li>Các tính năng được sử dụng (ví dụ: nhấn vào "Tạo hộp thư")</li>
+      <li>Báo cáo sự cố và thống kê lỗi</li>
+      <li>Phiên bản ứng dụng, mẫu thiết bị, phiên bản iOS</li>
+    </ul>
+    <p><strong>Dữ liệu này không định danh cá nhân bạn.</strong> Nội dung trong các hộp thư của bạn không bao giờ được đưa vào các số liệu thống kê này.</p>
+    <p>Nếu bạn không muốn thu thập dữ liệu này, bạn có thể tắt nó trong cài đặt iOS:
+      - Cài đặt → Quyền riêng tư &amp; Bảo mật → Phân tích &amp; Cải tiến → Chia sẻ với Nhà phát triển ứng dụng (tắt)</p>
+    <h2>3. Bên thứ ba</h2>
+    <p>Vellum sử dụng các dịch vụ của bên thứ ba sau:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Dịch vụ</th>
+          <th>Mục đích</th>
+          <th>Dữ liệu được truy cập</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple iCloud / CloudKit</td>
+          <td>Lưu trữ dữ liệu</td>
+          <td>Các hộp thư được mã hóa của bạn</td>
+        </tr>
+        <tr>
+          <td>Apple Push Notification</td>
+          <td>Gửi thông báo</td>
+          <td>Nội dung thông báo trống</td>
+        </tr>
+        <tr>
+          <td>RevenueCat</td>
+          <td>Giao dịch mua hàng</td>
+          <td>ID giao dịch ẩn danh</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Vellum <strong>không bán hoặc chia sẻ</strong> bất kỳ dữ liệu nào với bên thứ ba cho mục đích quảng cáo hoặc tiếp thị.</p>
+    <h2>4. Tính năng quà tặng và chia sẻ dữ liệu</h2>
+    <p>Khi bạn gửi một hộp thư làm quà tặng cho ai đó:</p>
+    <ol>
+      <li>Một CKShare được tạo trong tài khoản iCloud của bạn (hệ thống chia sẻ nội bộ của Apple).</li>
+      <li>Một liên kết (Universal Link) được gửi đến người nhận.</li>
+      <li>Khi người nhận mở liên kết, hộp thư sẽ được sao chép vào tài khoản iCloud của họ.</li>
+      <li>Hộp thư bây giờ thuộc về tài khoản của người nhận.</li>
+    </ol>
+    <p>Trong suốt quá trình này, Vellum <strong>không lưu trữ dữ liệu trên máy chủ của mình</strong>. Toàn bộ quá trình chuyển giao diễn ra thông qua Apple iCloud.</p>
+    <p>Thông tin người nhận như số điện thoại và tên được giữ trong siêu dữ liệu của hộp thư và nằm trong <strong>tài khoản iCloud của bạn</strong> cho đến khi hộp thư đến tay người nhận. Khi họ chấp nhận, siêu dữ liệu sẽ chuyển sang cho họ.</p>
+    <h2>5. Lưu trữ dữ liệu</h2>
+    <p>Các hộp thư Vellum được giữ <strong>miễn là bạn giữ chúng</strong> hoặc cho đến khi bạn đóng tài khoản. Không có việc tự động xóa. Các hộp thư là của bạn.</p>
+    <p>Các số liệu thống kê sử dụng ẩn danh được giữ lại bởi Apple Analytics trong 7-14 ngày.</p>
+    <h2>6. Quyền đối với dữ liệu của bạn</h2>
+    <p>Là một người dùng Apple iCloud, bạn có các quyền sau (thông qua Apple):</p>
+    <ul>
+      <li><strong>Quyền truy cập:</strong> bạn có thể xem các hộp thư của mình thông qua iCloud Drive.</li>
+      <li><strong>Quyền xóa:</strong> bạn có thể xóa chúng bất cứ lúc nào trong ứng dụng hoặc cài đặt iCloud.</li>
+      <li><strong>Quyền di chuyển dữ liệu:</strong> Apple cho phép bạn xuất dữ liệu iCloud của mình (privacy.apple.com).</li>
+      <li><strong>Quyền chỉnh sửa:</strong> các hộp thư là của bạn, bạn có thể chỉnh sửa tùy thích.</li>
+    </ul>
+    <p>Đối với các yêu cầu dữ liệu cụ thể về Vellum: vellumcapsuleapp@gmail.com</p>
+    <h2>7. Quyền riêng tư của trẻ em</h2>
+    <p>Vellum không hướng tới trẻ em dưới 13 tuổi. Nếu chúng tôi biết một người dùng dưới 13 tuổi, chúng tôi sẽ liên hệ với Apple để xóa tài khoản.</p>
+    <h2>8. Chuyển dữ liệu quốc tế</h2>
+    <p>Apple lưu trữ dữ liệu iCloud tại các trung tâm dữ liệu toàn cầu của mình. Chi tiết có trong chính sách bảo mật của Apple.</p>
+    <h2>9. Thay đổi chính sách</h2>
+    <p>Chúng tôi có thể cập nhật chính sách này theo thời gian. Chúng tôi sẽ gửi thông báo trong ứng dụng khi có thay đổi quan trọng.</p>
+    <h2>10. Liên hệ</h2>
+    <p>Đối với các câu hỏi hoặc mối bận tâm:</p>
+    <p><strong>Email:</strong> vellumcapsuleapp@gmail.com <strong>Web:</strong> https://vellumapp.net</p>
+    <p>Để báo cáo một sự cố thông qua App Store của Apple:
+      - App Store → Vellum → Báo cáo một sự cố</p>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>

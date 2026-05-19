@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>服务条款 — Vellum</title>
+  <meta name="description" content="Vellum 服务条款">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/zh/privacy/">隐私政策</a>
+        <a href="/zh/terms/">服务条款</a>
+        <a href="/zh/support/">客户支持</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>服务条款</h1>
+    <p><strong>最后更新：</strong>2026年5月19日</p>
+    <p>使用 Vellum 即表示您同意以下条款。</p>
+    <h2>1. 服务内容</h2>
+    <p>Vellum 是一款允许用户创建声音和视频胶囊的应用程序，这些胶囊可在未来特定日期由用户本人或他人开启。Vellum 会将您的数据存储在您的 Apple iCloud 账户中，我们在自己的服务器上不保留任何数据。</p>
+    <h2>2. 账户要求</h2>
+    <p>要使用 Vellum，您必须拥有处于激活状态的 Apple ID 和 iCloud 账户。Vellum 没有自己的账户系统——您的 Apple 身份即为您的 Vellum 身份。</p>
+    <h2>3. 费用与购买</h2>
+    <p>Vellum 按照以下模式运行：</p>
+    <ul>
+      <li><strong>免费试用：</strong>新用户可以创建有限数量的胶囊。</li>
+      <li><strong>单次购买：</strong>每次创建胶囊时均会触发应用内购买（IAP）。我们也提供组合包。</li>
+      <li><strong>无订阅服务。</strong>您只需为您使用的胶囊付费。</li>
+    </ul>
+    <p>所有购买行为均通过 Apple App Store 进行处理。适用 Apple 的退款政策：https://support.apple.com/HT204084</p>
+    <h2>4. 保留期限</h2>
+    <p>每个胶囊都有自己的保留期限（1个月、1年、5年、25年等）。该期限在购买时设定，包含以下内容：</p>
+    <ul>
+      <li>将胶囊保存至其指定的开启日期</li>
+      <li>在开启日期过后，于一定期限内保持其可被访问的状态</li>
+    </ul>
+    <p>期满后，胶囊可能不会被自动删除；这取决于您的 Apple iCloud 账户容量。Vellum 保证胶囊在整个保留期内的可用性。</p>
+    <h2>5. 赠送功能</h2>
+    <p>您可以将胶囊作为礼物发送给其他人：</p>
+    <ul>
+      <li>我们会使用与收件人 Apple ID 关联的电话号码来验证胶囊。</li>
+      <li>一旦收件人接受，该胶囊即归<strong>他们</strong>所有。</li>
+      <li>即使您删除了 Vellum，收件人仍可继续使用该胶囊。</li>
+      <li>如果收件人拒绝或链接过期，该胶囊将保留在您的账户中。</li>
+    </ul>
+    <p>如果赠送功能被滥用（骚扰、垃圾信息等），Vellum 可能会限制该账户的赠送权限。</p>
+    <h2>6. 禁止的行为</h2>
+    <p>严禁将 Vellum 用于以下目的：</p>
+    <ul>
+      <li>非法、有害或带有威胁性质的内容</li>
+      <li>骚扰、仇恨言论、歧视</li>
+      <li>性内容（特别是涉及未成年人的内容）</li>
+      <li>侵犯版权的内容</li>
+      <li>宣扬暴力、自残或自杀的内容</li>
+      <li>误导性或欺诈性用途</li>
+      <li>企图危害系统安全的行为</li>
+    </ul>
+    <p>违反这些规则的账户可能会在不经通知的情况下被终止使用。</p>
+    <h2>7. 知识产权</h2>
+    <ul>
+      <li><strong>您的胶囊归您所有：</strong>您保留对在 Vellum 中创建的胶囊的所有权利。</li>
+      <li><strong>Vellum 的软件归我们所有：</strong>应用代码、设计和商标均属于 Vellum。</li>
+      <li>Vellum 无法访问您的胶囊，因此不会将其用于任何商业目的。</li>
+    </ul>
+    <h2>8. 免责声明</h2>
+    <p>Vellum 仅作为工具提供，我们对以下情况不承担任何责任：</p>
+    <ul>
+      <li>Apple iCloud 服务中断</li>
+      <li>您的 iCloud 账户被删除或停用</li>
+      <li>与 iOS 更新相关的兼容性问题</li>
+      <li>数据丢失（超出 Apple iCloud 备份措施范围的数据丢失）</li>
+      <li>收件人对胶囊的滥用</li>
+    </ul>
+    <p>Vellum 无法保证任何胶囊都一定会在特定日期开启（这取决于 Apple iCloud 服务的持续运行情况）。</p>
+    <h2>9. 服务变更</h2>
+    <p>Vellum 可以自行决定修改、添加或删除功能。如有重大变更，我们将通过应用内通知进行宣布。</p>
+    <h2>10. 服务终止</h2>
+    <p>如果您违反本条款，或者 Apple 将您从 App Store 中移除，您对 Vellum 的账户访问权限可能会被终止。您现有的胶囊仍将保留在您的 iCloud 账户中。</p>
+    <h2>11. 适用法律</h2>
+    <p>这些条款受 [Jurisdiction] 法律管辖。由此产生的争议应提交至 [Jurisdiction] 法院解决。</p>
+    <h2>12. 联系方式</h2>
+    <p>如有任何问题：</p>
+    <p><strong>电子邮箱：</strong>vellumcapsuleapp@gmail.com
+      <strong>网址：</strong>https://vellumapp.net</p>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>

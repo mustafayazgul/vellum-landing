@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketentuan Layanan — Vellum</title>
+  <meta name="description" content="Vellum Ketentuan Layanan">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/id/privacy/">Privasi</a>
+        <a href="/id/terms/">Ketentuan</a>
+        <a href="/id/support/">Dukungan</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Ketentuan Layanan</h1>
+    <p><strong>Terakhir diperbarui:</strong> 19 Mei 2026</p>
+    <p>Dengan menggunakan Vellum, Anda menyetujui ketentuan berikut.</p>
+    <h2>1. Layanan</h2>
+    <p>Vellum adalah aplikasi yang memungkinkan pengguna membuat kapsul audio dan video untuk dibuka di masa mendatang, baik oleh mereka sendiri maupun orang lain. Vellum menyimpan data Anda di akun Apple iCloud Anda dan tidak menyimpan data di server kami sendiri.</p>
+    <h2>2. Akun</h2>
+    <p>Untuk menggunakan Vellum, Anda harus memiliki Apple ID dan akun iCloud yang aktif. Vellum tidak memiliki sistem akun sendiri — identitas Apple Anda adalah identitas Vellum Anda.</p>
+    <h2>3. Biaya dan Pembelian</h2>
+    <p>Vellum bekerja pada model berikut:</p>
+    <ul>
+      <li><strong>Uji coba gratis:</strong> Pengguna baru dapat membuat kapsul dalam jumlah terbatas.</li>
+      <li><strong>Pembelian sekali:</strong> Pembelian dalam aplikasi (IAP) dipicu saat Anda membuat setiap kapsul. Paket bundel juga tersedia.</li>
+      <li><strong>Tanpa langganan.</strong> Anda hanya membayar kapsul yang Anda gunakan.</li>
+    </ul>
+    <p>Pembelian diproses melalui Apple App Store. Kebijakan pengembalian dana Apple berlaku: https://support.apple.com/HT204084</p>
+    <h2>4. Periode Retensi</h2>
+    <p>Setiap kapsul memiliki masa retensi sendiri (1 bulan, 1 tahun, 5 tahun, 25 tahun, dll.). Periode ini ditetapkan pada saat pembelian dan mencakup:</p>
+    <ul>
+      <li>Menahan kapsul sampai tanggal pembukaannya</li>
+      <li>Menjaganya tetap dapat diakses untuk beberapa waktu setelah tanggal pembukaan</li>
+    </ul>
+    <p>Setelah periode berakhir, kapsul tidak dapat dihapus; ini tergantung pada kapasitas akun Apple iCloud Anda. Vellum menjamin ketersediaan kapsul selama periode ini.</p>
+    <h2>5. Fitur Hadiah</h2>
+    <p>Anda dapat mengirim kapsul sebagai hadiah kepada orang lain:</p>
+    <ul>
+      <li>Kapsul diverifikasi menggunakan nomor telepon yang terkait dengan Apple ID penerima.</li>
+      <li>Setelah penerima menerima, kapsul tersebut menjadi <strong>milik mereka</strong>.</li>
+      <li>Penerima dapat terus menggunakan kapsul tersebut meskipun Anda menghapus Vellum.</li>
+      <li>Jika penerima menolak atau tautan kedaluwarsa, kapsul tetap berada di akun Anda.</li>
+    </ul>
+    <p>Jika fungsi hadiah disalahgunakan (pelecehan, spam), Vellum dapat membatasi hak pengiriman hadiah akun tersebut.</p>
+    <h2>6. Penggunaan yang Dilarang</h2>
+    <p>Vellum tidak boleh digunakan untuk tujuan berikut:</p>
+    <ul>
+      <li>Konten ilegal, berbahaya, atau mengancam</li>
+      <li>Pelecehan, ujaran kebencian, diskriminasi</li>
+      <li>Konten seksual (terutama yang melibatkan anak di bawah umur)</li>
+      <li>Konten yang melanggar hak cipta</li>
+      <li>Konten yang mempromosikan kekerasan, menyakiti diri sendiri, atau bunuh diri</li>
+      <li>Penggunaan yang menyesatkan atau menipu</li>
+      <li>Upaya untuk mengompromikan keamanan sistem</li>
+    </ul>
+    <p>Akun yang melanggar aturan ini dapat dihentikan tanpa pemberitahuan.</p>
+    <h2>7. Kekayaan Intelektual</h2>
+    <ul>
+      <li><strong>Kapsul Anda adalah milik Anda:</strong> Anda mempertahankan semua hak atas kapsul yang Anda buat di Vellum.</li>
+      <li><strong>Perangkat lunak Vellum adalah milik kami:</strong> Kode aplikasi, desain, dan merek dagang milik Vellum.</li>
+      <li>Vellum tidak memiliki akses ke kapsul Anda dan oleh karena itu tidak menggunakannya untuk tujuan komersial.</li>
+    </ul>
+    <h2>8. Penafian</h2>
+    <p>Vellum disediakan sebagai alat, dan kami tidak bertanggung jawab atas hal-hal berikut:</p>
+    <ul>
+      <li>Gangguan layanan Apple iCloud</li>
+      <li>Penghapusan atau penangguhan akun iCloud Anda</li>
+      <li>Masalah kompatibilitas dengan pembaruan iOS</li>
+      <li>Kehilangan data (di luar tindakan pencadangan Apple iCloud)</li>
+      <li>Penyalahgunaan kapsul oleh penerima</li>
+    </ul>
+    <p>Vellum tidak dapat menjamin bahwa kapsul apa pun akan terbuka pada tanggal tertentu (ini tergantung pada kelangsungan layanan Apple iCloud).</p>
+    <h2>9. Perubahan Layanan</h2>
+    <p>Vellum dapat mengubah, menambah, atau menghapus fitur atas kebijakannya sendiri. Perubahan signifikan akan diumumkan melalui notifikasi dalam aplikasi.</p>
+    <h2>10. Pengakhiran</h2>
+    <p>Jika Anda melanggar ketentuan ini atau Apple menghapus Anda dari App Store, akses akun Anda ke Vellum dapat dihentikan. Kapsul Anda yang ada akan tetap berada di akun iCloud Anda.</p>
+    <h2>11. Hukum yang Mengatur</h2>
+    <p>Ketentuan ini diatur oleh hukum [Jurisdiction]. Perselisihan diselesaikan di pengadilan [Jurisdiction].</p>
+    <h2>12. Kontak</h2>
+    <p>Untuk pertanyaan:</p>
+    <p><strong>Email:</strong> vellumcapsuleapp@gmail.com
+      <strong>Web:</strong> https://vellumapp.net</p>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>

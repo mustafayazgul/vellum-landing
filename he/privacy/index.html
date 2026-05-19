@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מדיניות פרטיות — Vellum</title>
+  <meta name="description" content="Vellum מדיניות פרטיות">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+
+    [dir="rtl"] th,
+    [dir="rtl"] td {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/he/privacy/">פרטיות</a>
+        <a href="/he/terms/">תנאים</a>
+        <a href="/he/support/">תמיכה</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>מדיניות פרטיות</h1>
+    <p><strong>עדכון אחרון:</strong> 19 במאי 2026</p>
+    <p>תודה שאתה משתמש ב-Vellum. מדיניות פרטיות זו מסבירה כיצד מטופלים הנתונים שלך כאשר אתה משתמש באפליקציית Vellum ("Vellum").</p>
+    <h2>תקציר מהיר</h2>
+    <ul>
+      <li>ל-Vellum אין שרתים.</li>
+      <li>כל הכמוסות שלך מאוחסנות בחשבון ה-Apple iCloud שלך, מוצפנות מקצה לקצה.</li>
+      <li>לעולם אין לנו גישה להקלטות האודיו, להקלטות הווידאו או להערות האישיות שלך.</li>
+      <li>כשאתה שולח מתנה, הכמוסה עוברת ישירות דרך iCloud אל הנמען. אין שום מתווך בינינו.</li>
+      <li>אנו עשויים לאסוף סטטיסטיקות שימוש אנונימיות; סטטיסטיקות אלו אינן מזהות אותך באופן אישי.</li>
+    </ul>
+    <h2>1. מי אנחנו</h2>
+    <p>Vellum מפותחת על ידי Vellum. ליצירת קשר: vellumcapsuleapp@gmail.com</p>
+    <h2>2. נתונים שאנו אוספים</h2>
+    <h3>2.1 נתונים שאיננו אוספים</h3>
+    <p>Vellum <strong>אינה אוספת, רואה או מאחסנת בשרתים שלנו</strong> את הנתונים הבאים:</p>
+    <ul>
+      <li>הקלטות האודיו שלך</li>
+      <li>הקלטות הווידאו שלך</li>
+      <li>תוכן הכמוסות שלך</li>
+      <li>הערות אישיות שלך</li>
+      <li>פרטי הנמען (מספרי טלפון, שמות)</li>
+      <li>מטא-נתונים של כמוסות ששלחת או קיבלת</li>
+    </ul>
+    <p>כל זה מאוחסן ב<strong>חשבון ה-Apple iCloud שלך</strong>. Vellum היא רק ממשק — אין לנו שרתים משלנו כדי לגשת לנתונים שלך.</p>
+    <h3>2.2 נתונים המנוהלים על ידי Apple</h3>
+    <p>הבאים מנוהלים באמצעות שירותי Apple iCloud:</p>
+    <ul>
+      <li>אחסון נתוני CloudKit</li>
+      <li>אספקת התראות דחיפה (שירות Apple Push Notification)</li>
+      <li>סנכרון וגיבוי של iCloud</li>
+    </ul>
+    <p>הפרטיות של נתונים אלה כפופה למדיניות הפרטיות של Apple: https://www.apple.com/legal/privacy/</p>
+    <h3>2.3 נתוני שימוש אנונימיים (אופציונלי)</h3>
+    <p>כדי לשפר את Vellum, אנו עשויים לאסוף את הנתונים האנונימיים הבאים:</p>
+    <ul>
+      <li>תדירות פתיחת האפליקציה</li>
+      <li>באילו תכונות נעשה שימוש (לדוגמה, לחיצה על "צור כמוסה")</li>
+      <li>דוחות קריסה וסטטיסטיקות שגיאות</li>
+      <li>גרסת אפליקציה, דגם מכשיר, גרסת iOS</li>
+    </ul>
+    <p><strong>נתונים אלה אינם מזהים אותך באופן אישי.</strong> תוכן הכמוסות שלך אינו נכלל בסטטיסטיקות אלו.</p>
+    <p>אם אינך רוצה שנתונים אלה ייאספו, תוכל להשבית זאת בהגדרות iOS:
+      - הגדרות ← פרטיות ואבטחה ← ניתוח ושיפורים ← שתף με מפתחי אפליקציות (כבה)</p>
+    <h2>3. צדדים שלישיים</h2>
+    <p>Vellum משתמשת בשירותי הצד השלישי הבאים:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>שירות</th>
+          <th>מטרה</th>
+          <th>נתונים שאליהם ניגשים</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple iCloud / CloudKit</td>
+          <td>אחסון נתונים</td>
+          <td>הכמוסות המוצפנות שלך</td>
+        </tr>
+        <tr>
+          <td>Apple Push Notification</td>
+          <td>אספקת התראות</td>
+          <td>תוכן התראות ריק</td>
+        </tr>
+        <tr>
+          <td>RevenueCat</td>
+          <td>עסקאות רכישה</td>
+          <td>מזהה עסקה אנונימי</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Vellum <strong>אינה מוכרת או משתפת</strong> נתונים כלשהם עם צדדים שלישיים למטרות פרסום או שיווק.
+    </p>
+    <h2>4. תכונת מתנה ושיתוף נתונים</h2>
+    <p>כשאתה שולח כמוסה כמתנה למישהו:</p>
+    <ol>
+      <li>נוצר CKShare בחשבון ה-iCloud שלך (מערכת השיתוף המובנית של Apple).</li>
+      <li>קישור (Universal Link) נשלח לנמען.</li>
+      <li>כאשר הנמען פותח את הקישור, הכמוסה מועתקת לחשבון ה-iCloud שלו.</li>
+      <li>הכמוסה נמצאת כעת בחשבון של הנמען.</li>
+    </ol>
+    <p>לאורך כל התהליך הזה, Vellum <strong>אינה מאחסנת נתונים בשרתים שלה</strong>. כל ההעברה מתבצעת דרך Apple iCloud.</p>
+    <p>פרטי הנמען, כגון מספר טלפון ושם, נשמרים במטא-נתונים של הכמוסה ונשארים ב<strong>חשבון ה-iCloud שלך</strong> עד שהכמוסה מגיעה לנמען. כשהוא מאשר, המטא-נתונים מועברים אליו.</p>
+    <h2>5. שמירת נתונים</h2>
+    <p>כמוסות Vellum נשמרות <strong>כל עוד אתה שומר אותן</strong> או עד שתסגור את חשבונך. אין מחיקה אוטומטית. הכמוסות שלך הן שלך.</p>
+    <p>סטטיסטיקות שימוש אנונימיות נשמרות על ידי Apple Analytics למשך 7-14 ימים.</p>
+    <h2>6. הזכויות שלך בנתונים</h2>
+    <p>כמשתמש Apple iCloud, יש לך את הזכויות הבאות (דרך Apple):</p>
+    <ul>
+      <li><strong>זכות גישה:</strong> באפשרותך להציג את הכמוסות שלך דרך iCloud Drive.</li>
+      <li><strong>זכות מחיקה:</strong> באפשרותך למחוק אותן בכל עת מתוך האפליקציה או מהגדרות iCloud.</li>
+      <li><strong>זכות לניידות:</strong> Apple מאפשרת לך לייצא את נתוני ה-iCloud שלך (privacy.apple.com).</li>
+      <li><strong>זכות לתיקון:</strong> הכמוסות שלך הן שלך, באפשרותך לשנות אותן כרצונך.</li>
+    </ul>
+    <p>עבור בקשות נתונים ספציפית לגבי Vellum: vellumcapsuleapp@gmail.com</p>
+    <h2>7. פרטיות ילדים</h2>
+    <p>Vellum אינה פונה לילדים מתחת לגיל 13. אם ייוודע לנו שמשתמש הוא מתחת לגיל 13, נפתח בפנייה ל-Apple למחיקת החשבון.</p>
+    <h2>8. העברות נתונים בינלאומיות</h2>
+    <p>Apple מאחסנת נתוני iCloud במרכזי הנתונים הגלובליים שלה. פרטים מופיעים במדיניות הפרטיות של Apple.</p>
+    <h2>9. שינויים במדיניות</h2>
+    <p>אנו עשויים לעדכן מדיניות זו מעת לעת. נשלח התראה בתוך האפליקציה כאשר יתרחש שינוי משמעותי.</p>
+    <h2>10. יצירת קשר</h2>
+    <p>לשאלות או חששות:</p>
+    <p><strong>אימייל:</strong> vellumcapsuleapp@gmail.com
+      <strong>אתר:</strong> https://vellumapp.net
+    </p>
+    <p>כדי לדווח על בעיה דרך ה-App Store של Apple:
+      - App Store ← Vellum ← דווח על בעיה</p>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="el" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Υποστήριξη — Vellum</title>
+  <meta name="description" content="Vellum Υποστήριξη">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/el/privacy/">Απόρρητο</a>
+        <a href="/el/terms/">Όροι</a>
+        <a href="/el/support/">Υποστήριξη</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Υποστήριξη</h1>
+    <p>Εάν αντιμετωπίζετε προβλήματα με το Vellum ή έχετε κάποια ερώτηση, βρίσκεστε στο σωστό μέρος.</p>
+    <h2>Επικοινωνία</h2>
+    <p><strong>Γενική υποστήριξη:</strong> vellumcapsuleapp@gmail.com
+      <strong>Ερωτήσεις απορρήτου:</strong> vellumcapsuleapp@gmail.com
+      <strong>Αναφορές σφαλμάτων:</strong> vellumcapsuleapp@gmail.com
+    </p>
+    <p>Συνήθως απαντάμε εντός 24-48 ωρών.</p>
+    <hr />
+    <h2>Συχνές Ερωτήσεις (FAQ)</h2>
+    <h3>Πώς λειτουργεί το Vellum;</h3>
+    <p>Το Vellum σάς επιτρέπει να δημιουργείτε κάψουλες ήχου και βίντεο και να τις ανοίγετε σε μελλοντική ημερομηνία. Δημιουργείτε μια κάψουλα, ηχογραφείτε, επιλέγετε την ημερομηνία ανοίγματος (1 μήνας, 1 έτος, έως 25 έτη). Μέχρι να έρθει αυτή η ημερομηνία, η κάψουλα παραμένει κλειστή — ούτε καν εσείς δεν μπορείτε να την ακούσετε.</p>
+    <h3>Πού αποθηκεύονται οι κάψουλές μου;</h3>
+    <p>Στον λογαριασμό σας στο Apple iCloud. Το Vellum δεν διαθέτει διακομιστές. Όλες οι κάψουλες αποθηκεύονται στο iCloud, κρυπτογραφημένες από άκρη σε άκρη. Δεν έχουμε πρόσβαση στο περιεχόμενο των καψουλών.</p>
+    <h3>Θα χαθούν οι κάψουλές μου αν διαγράψω το Vellum;</h3>
+    <p>Όχι. Οι κάψουλές σας παραμένουν στο iCloud. Όταν επανεγκαταστήσετε το Vellum και συνδεθείτε με το ίδιο Apple ID, οι κάψουλές σας επιστρέφουν.</p>
+    <h3>Τι γίνεται αν αλλάξω λογαριασμό iCloud;</h3>
+    <p>Οι κάψουλες παραμένουν στον παλιό σας λογαριασμό. Εάν συνδεθείτε με νέο λογαριασμό, οι κάψουλές σας δεν θα εμφανιστούν. Ελέγξτε τις κάψουλές σας πριν από οποιαδήποτε αλλαγή Apple ID.</p>
+    <h3>Μπορώ να ανοίξω μια κάψουλα πριν από την ώρα της;</h3>
+    <p>Όχι. Αυτή είναι η βασική αρχή του Vellum. Μέχρι να έρθει η ημερομηνία, κανείς — συμπεριλαμβανομένου εσάς — δεν μπορεί να ακούσει την κάψουλα. Αυτή είναι μια σκόπιμη σχεδιαστική απόφαση.</p>
+    <h3>Πώς μπορώ να στείλω μια κάψουλα ως δώρο;</h3>
+    <ol>
+      <li>Δημιουργήστε μια νέα κάψουλα.</li>
+      <li>Επιλέξτε "Αποστολή σε κάποιον".</li>
+      <li>Εισαγάγετε τον αριθμό τηλεφώνου του παραλήπτη (πρέπει να είναι συνδεδεμένος με το Apple ID του).</li>
+      <li>Επιλέξτε ημερομηνία ανοίγματος.</li>
+      <li>Ηχογραφήστε, αγοράστε, στείλτε.</li>
+    </ol>
+    <p>Ο παραλήπτης λαμβάνει έναν σύνδεσμο. Όταν τον πατήσει, η κάψουλα προστίθεται στον λογαριασμό του στο iCloud.</p>
+    <h3>Έστειλα ένα δώρο αλλά ο παραλήπτης δεν το είδε.</h3>
+    <p>Μερικές πιθανότητες:</p>
+    <ul>
+      <li>Ο αριθμός τηλεφώνου του παραλήπτη ενδέχεται να μην είναι συνδεδεμένος με το Apple ID του. Ζητήστε του να ελέγξει.</li>
+      <li>Ο σύνδεσμος ενδέχεται να μην έχει παραδοθεί ακόμα. Βεβαιωθείτε ότι τον στείλατε μέσω iMessage, email κ.λπ.</li>
+      <li>Η σύνδεση iCloud του παραλήπτη ενδέχεται να είναι απενεργοποιημένη.</li>
+    </ul>
+    <h3>Μου τελείωσαν οι δωρεάν κάψουλες, τι κάνω τώρα;</h3>
+    <p>Θα πρέπει να πραγματοποιήσετε μια αγορά εντός της εφαρμογής για νέες κάψουλες. Διατίθενται επιλογές μεμονωμένης κάψουλας και πακέτων. Δεν υπάρχουν συνδρομές.</p>
+    <h3>Θέλω επιστροφή χρημάτων για μια αγορασμένη κάψουλα.</h3>
+    <p>Ισχύει η πολιτική επιστροφής χρημάτων του App Store της Apple. Μπορείτε να υποβάλετε αίτημα μέσω του https://reportaproblem.apple.com</p>
+    <h3>Σε ποιες συσκευές λειτουργεί το Vellum;</h3>
+    <p>iOS 17 και μεταγενέστερο. Βελτιστοποιημένο για iPhone και iPad. Τα Mac, Apple Watch και Apple TV δεν υποστηρίζονται (ακόμη).</p>
+    <h3>Μπορώ να προτείνω μια δυνατότητα;</h3>
+    <p>Ναι, παρακαλούμε γράψτε στο vellumcapsuleapp@gmail.com. Διαβάζουμε κάθε πρόταση.</p>
+    <h3>Τι θα συμβεί στις κάψουλές μου αν το Vellum κλείσει;</h3>
+    <p>Οι κάψουλές σας συνεχίζουν να ζουν στο Apple iCloud. Δεδομένου ότι το Vellum δεν διαθέτει διακομιστές, ακόμα κι αν η εταιρεία κλείσει, δεν θα χάσετε δεδομένα. Μπορείτε να έχετε πρόσβαση στα πρωτογενή αρχεία μέσω του Apple iCloud Drive.</p>
+    <hr />
+    <h2>Γνωστά θέματα</h2>
+    <p>Για τρέχοντα γνωστά θέματα: https://vellumapp.net/status</p>
+    <h2>Νομικά</h2>
+    <ul>
+      <li><a href="/el/privacy/">Πολιτική απορρήτου</a></li>
+      <li><a href="/el/terms/">Όροι χρήσης</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>

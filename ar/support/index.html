@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدعم — Vellum</title>
+  <meta name="description" content="Vellum الدعم">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg: #faf8f3;
+      --bg-elevated: #ffffff;
+      --ink: #1a1612;
+      --ink-soft: #5a544c;
+      --ink-faint: #8a8377;
+      --gold: #b8893d;
+      --line: #e6dfd1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .nav {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: rgba(250, 248, 243, 0.7);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--bg);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink-soft);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 3rem 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(184, 137, 61, 0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--ink);
+      background: rgba(184, 137, 61, 0.05);
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--ink-faint);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .locale-switcher {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      margin-top: 4rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    .locale-switcher a {
+      margin: 0 0.4rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    [dir="rtl"] ul,
+    [dir="rtl"] ol {
+      margin: 0 1.5rem 1rem 0;
+    }
+
+    [dir="rtl"] th,
+    [dir="rtl"] td {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Vellum</a>
+      <div class="nav-links">
+        <a href="/ar/privacy/">الخصوصية</a>
+        <a href="/ar/terms/">الشروط</a>
+        <a href="/ar/support/">الدعم</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>الدعم</h1>
+    <p>إذا كنت تواجه مشكلة مع Vellum أو كان لديك سؤال، فأنت في المكان الصحيح.</p>
+    <h2>تواصل معنا</h2>
+    <p><strong>الدعم العام:</strong> vellumcapsuleapp@gmail.com
+      <strong>أسئلة الخصوصية:</strong> vellumcapsuleapp@gmail.com
+      <strong>تقارير الأخطاء:</strong> vellumcapsuleapp@gmail.com
+    </p>
+    <p>عادةً ما نرد في غضون ٢٤ إلى ٤٨ ساعة.</p>
+    <hr />
+    <h2>الأسئلة الشائعة</h2>
+    <h3>كيف يعمل Vellum؟</h3>
+    <p>يتيح لك Vellum إنشاء كبسولات صوتية ومرئية وفتحها في تاريخ مستقبلي. تقوم بإنشاء كبسولة، وتسجيلها، واختيار تاريخ الفتح (شهر واحد، سنة واحدة، حتى ٢٥ سنة). حتى يحين هذا التاريخ، تظل الكبسولة مغلقة — حتى أنت لا يمكنك الاستماع إليها.</p>
+    <h3>أين يتم تخزين كبسولاتي؟</h3>
+    <p>في حساب Apple iCloud الخاص بك. لا يمتلك Vellum أي خوادم. يتم تخزين جميع الكبسولات في iCloud، وهي مشفرة من الطرف إلى الطرف. لا يمكننا الوصول إلى محتوى الكبسولة.</p>
+    <h3>هل ستضيع كبسولاتي إذا قمت بحذف Vellum؟</h3>
+    <p>لا. تظل كبسولاتك في iCloud. عند إعادة تثبيت Vellum وتسجيل الدخول باستخدام نفس معرّف Apple ID، ستعود كبسولاتك مجدداً.</p>
+    <h3>ماذا لو قمت بتغيير حساب iCloud الخاص بي؟</h3>
+    <p>تظل الكبسولات مع حسابك القديم. إذا قمت بتسجيل الدخول باستخدام حساب جديد، فلن تظهر كبسولاتك. تحقق من كبسولاتك قبل إجراء أي تغييرات على معرّف Apple ID الخاص بك.</p>
+    <h3>هل يمكنني فتح الكبسولة قبل وقتها؟</h3>
+    <p>لا. هذا هو مبدأ Vellum الأساسي. حتى يحين التاريخ، لا يمكن لأحد — بما في ذلك أنت — الاستماع إلى الكبسولة. هذا قرار تصميمي مقصود.</p>
+    <h3>كيف يمكنني إرسال كبسولة كهدية؟</h3>
+    <ol>
+      <li>قم بإنشاء كبسولة جديدة.</li>
+      <li>حدد "إرسال إلى شخص ما".</li>
+      <li>أدخل رقم هاتف المستلم (يجب أن يكون مرتبطاً بمعرّف Apple ID الخاص به).</li>
+      <li>اختر تاريخ الفتح.</li>
+      <li>سجّل، اشترِ، أرسل.</li>
+    </ol>
+    <p>يتلقى المستلم رابطاً. وعندما ينقر عليه، يتم إضافة الكبسولة إلى حساب iCloud الخاص به.</p>
+    <h3>لقد أرسلت هدية ولكن المستلم لم يرها.</h3>
+    <p>بعض الاحتمالات:</p>
+    <ul>
+      <li>قد لا يكون رقم هاتف المستلم مرتبطاً بمعرّف Apple ID الخاص به. اطلب منه التحقق.</li>
+      <li>ربما لم يتم تسليم الرابط بعد؛ تأكد من إرساله عبر iMessage، البريد الإلكتروني، إلخ.</li>
+      <li>قد تكون اتصالات iCloud للمستلم معطلة.</li>
+    </ul>
+    <h3>لقد نفدت كبسولاتي المجانية، ماذا أفعل الآن?</h3>
+    <p>ستحتاج إلى إجراء عملية شراء داخل التطبيق للحصول على كبسولات جديدة. تتوفر خيارات كبسولات فردية وباقات. لا توجد اشتراكات.</p>
+    <h3>أريد استرداد أموالي مقابل كبسولة قمت بشرائها.</h3>
+    <p>تطبق سياسة الاسترداد الخاصة بمتجر تطبيقات Apple App Store. يمكنك تقديم طلب عبر https://reportaproblem.apple.com</p>
+    <h3>ما هي الأجهزة التي يعمل عليها Vellum؟</h3>
+    <p>نظام تشغيل iOS 17 وأحدث. وهو محسن لأجهزة iPhone و iPad. أجهزة Mac و Apple Watch و Apple TV غير مدعومة (حتى الآن).</p>
+    <h3>هل يمكنني اقتراح ميزة؟</h3>
+    <p>نعم، يرجى المراسلة على vellumcapsuleapp@gmail.com. نحن نقرأ كل اقتراح.</p>
+    <h3>ماذا يحدث لكبسولاتي إذا توقف Vellum عن العمل؟</h3>
+    <p>تستمر كبسولاتك في العمل على Apple iCloud. نظراً لأن Vellum لا يمتلك أي خوادم، فحتى لو أغلقت الشركة، فلن تفقد بياناتك. يمكنك الوصول إلى الملفات الخام من خلال Apple iCloud Drive.</p>
+    <hr />
+    <h2>المشكلات المعروفة</h2>
+    <p>للمشكلات المعروفة الحالية: https://vellumapp.net/status</p>
+    <h2>المعلومات القانونية</h2>
+    <ul>
+      <li><a href="/ar/privacy/">سياسة الخصوصية</a></li>
+      <li><a href="/ar/terms/">شروط الخدمة</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    © 2026 Vellum · <a href="mailto:vellumcapsuleapp@gmail.com">vellumcapsuleapp@gmail.com</a>
+  </footer>
+
+</body>
+
+</html>
