@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "vellum-landing",
+  "name": "vellum-time-api",
   "compatibility_date": "2026-05-18",
   "observability": {
     "enabled": true
