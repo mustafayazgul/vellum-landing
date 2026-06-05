@@ -3,6 +3,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<script>
+(function () {
+  if (location.search.indexOf('nolang') !== -1) return;
+
+  var supported = ['ar','de','el','en','es-es','es-mx','fr','he','hi','id','it','ja','ko','ms','pt-br','pt-pt','ro','ru','th','tr','vi','zh'];
+  var lower = supported.map(function (s) { return s.toLowerCase(); });
+
+  function exact(code) {
+    var i = lower.indexOf(code.toLowerCase());
+    return i === -1 ? null : supported[i];
+  }
+  function base(code) {
+    var b = code.toLowerCase().split('-')[0];
+    var i = lower.indexOf(b);
+    if (i !== -1) return supported[i];
+    for (var j = 0; j < lower.length; j++) {
+      if (lower[j].split('-')[0] === b) return supported[j];
+    }
+    return null;
+  }
+
+  var langs = (navigator.languages && navigator.languages.length)
+    ? navigator.languages
+    : [navigator.language || navigator.userLanguage || 'en'];
+
+  var target = null;
+  for (var k = 0; k < langs.length && !target; k++) {
+    target = exact(langs[k]) || base(langs[k]);
+  }
+  if (!target) target = 'en';
+
+  var suffix = (location.protocol === 'file:') ? '/index.html' : '/';
+  location.replace(target + suffix);
+})();
+</script>
 <title>Vellum · Sana bir kapsul gonderildi</title>
 <meta name="theme-color" content="#0E0B14"/>
 
